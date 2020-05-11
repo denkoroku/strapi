@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Person": {
+      "type": "string"
+    },
+    "Technology": {
+      "type": "string"
+    },
+    "articles": {
+      "via": "categories",
+      "collection": "article"
+    }
+  }
+}
